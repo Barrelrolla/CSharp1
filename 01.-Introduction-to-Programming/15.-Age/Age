@@ -1,0 +1,21 @@
+using System;
+//Задача 15: Write a program that reads your birthday from the console and prints on the console how old you are you now and how old will you be after 10 years.
+
+class Birthday
+{
+    static void Main()
+    {
+        Console.WriteLine("Please enter your birthday in the following format DD.MM.YYYY");
+
+        DateTime birthday = DateTime.Parse(Console.ReadLine());
+        DateTime today = DateTime.Now;
+        int age = today.Year - birthday.Year;
+
+        if (today < birthday.AddYears(age)) age--;
+
+        Console.WriteLine("Your age now is: " + age);
+        Console.WriteLine("Your age in 10 years from now will be: " + (age + 10));
+
+        Console.ReadLine();
+    }
+}
