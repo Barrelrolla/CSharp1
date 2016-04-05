@@ -1,0 +1,10 @@
+using System;
+// Задача 08: Write a program that calculates the square root of the number 12345 and prints it on the console.
+
+    class SquareRoot
+    {
+        static void Main()
+        {
+            Console.WriteLine(Math.Sqrt(12345));
+        }
+    }
