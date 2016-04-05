@@ -1,0 +1,11 @@
+using System;
+// Задача 07: Create console application that prints your first and last name, each at a separate line.
+
+    class FirstLastName
+    {
+        static void Main()
+        {
+            Console.WriteLine("Yulian");
+            Console.WriteLine("Teofilov");
+        }
+    }
